@@ -1,0 +1,430 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  
+
+
+
+  <!-- Hero Header -->
+  <header class="hero-section">
+    <div class="container">
+      <h1>Learn Digital Skills with Confidence</h1>
+      <p>Master essential computer skills through structured learning designed to build knowledge step by step. Get certified and boost your career with our comprehensive courses.</p>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stat-item">
+      <h2>50,000+</h2>
+      <p>Students Enrolled</p>
+    </div>
+    <div class="stat-item">
+      <h2>95%</h2>
+      <p>Completion Rate</p>
+    </div>
+    <div class="stat-item">
+      <h2>4.9/5</h2>
+      <p>Average Rating</p>
+    </div>
+    <div class="stat-item">
+      <h2>100+</h2>
+      <p>Countries Reached</p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us-section">
+    <h2>Why Choose Us?</h2>
+    <p class="subtitle">Everything you need to succeed in your digital learning journey, designed with your success in mind.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="icon">&#x1F4DA;</span>
+        <h3>Expertly Designed Lessons</h3>
+        <p>Structured learning paths for beginners and advanced learners with step-by-step guidance.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">&#x2705;</span>
+        <h3>Interactive Quizzes</h3>
+        <p>Regular assessments with instant feedback to reinforce your learning and track progress.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">&#x1F4DA;</span>
+        <h3>Official Certificates</h3>
+        <p>Earn recognized certificates upon course completion to showcase your achievements.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">&#x231B;</span>
+        <h3>Flexible Learning</h3>
+        <p>Study at your own pace with 24/7 online access from any device, anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">&#x1F465;</span>
+        <h3>Trusted Worldwide</h3>
+        <p>Join thousands of learners who have successfully built their digital skills with us.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon">&#x1F6E1;</span>
+        <h3>Safe Learning Environment</h3>
+        <p>Secure platform with comprehensive cyber safety education included in all courses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation for Lessons -->
+  <nav>
+    <button onclick="showChapter(1)">Lesson 1</button>
+    <button onclick="showChapter(2)">Lesson 2</button>
+    <button onclick="showChapter(3)">Lesson 3</button>
+    <button onclick="showChapter(4)">Lesson 4</button>
+    <button onclick="showChapter(5)">Lesson 5</button>
+    <button onclick="showChapter(6)">Lesson 6</button>
+    <button onclick="showChapter(7)">Lesson 7</button>
+    <button onclick="showChapter(8)">Lesson 8</button>
+    <button onclick="showChapter(9)">Lesson 9</button>
+    <button onclick="showChapter(10)">Lesson 10</button>
+    <button onclick="showCertificate()">Get Certificate</button>
+  </nav>
+
+  <!-- Lessons Content -->
+  <div id="chapters">
+     <!-- LESSON 1 -->
+    <div class="chapter active" id="ch1">
+      <h2>Lesson 1: What is a Computer?</h2>
+      <p>A computer is an electronic device that processes data and performs tasks based on instructions.</p>
+      <iframe src="https://www.youtube.com/embed/Cu3R5it4cQs?si=zq9IZ6fsTH_eEwxt"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz1">
+          <p>1. A computer is a ______ device.</p>
+          <input type="radio" name="q1" value="a"> Mechanical <br>
+          <input type="radio" name="q1" value="b"> Electronic <br>
+          <input type="radio" name="q1" value="c"> Manual <br>
+          <p>2. Computers process ______.</p>
+          <input type="radio" name="q2" value="a"> Emotions <br>
+          <input type="radio" name="q2" value="b"> Data <br>
+          <input type="radio" name="q2" value="c"> Food <br>
+          <p>3. Computers are used in ______.</p>
+          <input type="radio" name="q3" value="a"> Only offices <br>
+          <input type="radio" name="q3" value="b"> Daily life <br>
+          <input type="radio" name="q3" value="c"> Only schools <br>
+          <p>4. The brain of the computer is called ______.</p>
+          <input type="radio" name="q4" value="a"> CPU <br>
+          <input type="radio" name="q4" value="b"> Monitor <br>
+          <input type="radio" name="q4" value="c"> Keyboard <br>
+          <p>5. Computers follow ______.</p>
+          <input type="radio" name="q5" value="a"> Instructions <br>
+          <input type="radio" name="q5" value="b"> Luck <br>
+          <input type="radio" name="q5" value="c"> Magic <br>
+          <button type="button" onclick="checkQuiz('quiz1', ['b','b','b','a','a'])">Submit Quiz</button>
+        </form>
+        <p id="result1"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 2 -->
+    <div class="chapter" id="ch2">
+      <h2>Lesson 2: Parts of a Computer</h2>
+      <p>Computers have different parts like monitor, keyboard, CPU, and mouse. Each part has its role.</p>
+      <iframe src="https://www.youtube.com/embed/YxcTBB6_bws?si=IWWEfVP1wyzNMr_p"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz2">
+          <p>1. The brain of the computer is the ______.</p>
+          <input type="radio" name="q1" value="a"> CPU <br>
+          <input type="radio" name="q1" value="b"> Monitor <br>
+          <input type="radio" name="q1" value="c"> Mouse <br>
+          <p>2. The device used to type is the ______.</p>
+          <input type="radio" name="q2" value="a"> Mouse <br>
+          <input type="radio" name="q2" value="b"> Keyboard <br>
+          <input type="radio" name="q2" value="c"> CPU <br>
+          <p>3. Which shows output visually?</p>
+          <input type="radio" name="q3" value="a"> Keyboard <br>
+          <input type="radio" name="q3" value="b"> Monitor <br>
+          <input type="radio" name="q3" value="c"> Mouse <br>
+          <p>4. Which device controls movement on the screen?</p>
+          <input type="radio" name="q4" value="a"> CPU <br>
+          <input type="radio" name="q4" value="b"> Mouse <br>
+          <input type="radio" name="q4" value="c"> Monitor <br>
+          <p>5. Speakers are used for ______.</p>
+          <input type="radio" name="q5" value="a"> Sound output <br>
+          <input type="radio" name="q5" value="b"> Typing <br>
+          <input type="radio" name="q5" value="c"> Clicking <br>
+          <button type="button" onclick="checkQuiz('quiz2', ['a','b','b','b','a'])">Submit Quiz</button>
+        </form>
+        <p id="result2"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 3 -->
+    <div class="chapter" id="ch3">
+      <h2>Lesson 3: Operating System in Computer</h2>
+      <p>An operating system is software that manages hardware and software resources, making computers usable.</p>
+      <iframe src="https://www.youtube.com/embed/kK7L2ISGucM?si=qkmXLN8PVMjoW6na"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz3">
+          <p>1. OS stands for ______.</p>
+          <input type="radio" name="q1" value="a"> Open Source <br>
+          <input type="radio" name="q1" value="b"> Operating System <br>
+          <input type="radio" name="q1" value="c"> Other Software <br>
+          <p>2. OS acts as ______ between user and computer.</p>
+          <input type="radio" name="q2" value="a"> Bridge <br>
+          <input type="radio" name="q2" value="b"> Blocker <br>
+          <input type="radio" name="q2" value="c"> Virus <br>
+          <p>3. Example of OS is ______.</p>
+          <input type="radio" name="q3" value="a"> Windows <br>
+          <input type="radio" name="q3" value="b"> CPU <br>
+          <input type="radio" name="q3" value="c"> Keyboard <br>
+          <p>4. OS manages ______.</p>
+          <input type="radio" name="q4" value="a"> Hardware <br>
+          <input type="radio" name="q4" value="b"> Software <br>
+          <input type="radio" name="q4" value="c"> Both <br>
+          <p>5. Without OS, a computer is ______.</p>
+          <input type="radio" name="q5" value="a"> Fully usable <br>
+          <input type="radio" name="q5" value="b"> Hard to use <br>
+          <input type="radio" name="q5" value="c"> A toy <br>
+          <button type="button" onclick="checkQuiz('quiz3', ['b','a','a','c','b'])">Submit Quiz</button>
+        </form>
+        <p id="result3"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 4 -->
+    <div class="chapter" id="ch4">
+      <h2>Lesson 4: Using Email</h2>
+      <p>Email is an electronic way to send and receive messages via the internet.</p>
+      <iframe src="https://www.youtube.com/embed/ELioaGg4WOY?si=9vTFNMZ46kG_6IMA"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz4">
+          <p>1. Email stands for ______.</p>
+          <input type="radio" name="q1" value="a"> Electronic Mail <br>
+          <input type="radio" name="q1" value="b"> Easy Mail <br>
+          <input type="radio" name="q1" value="c"> Express Mail <br>
+          <p>2. An email address contains ______.</p>
+          <input type="radio" name="q2" value="a"> @ symbol <br>
+          <input type="radio" name="q2" value="b"> # symbol <br>
+          <input type="radio" name="q2" value="c"> % symbol <br>
+          <p>3. Emails can include ______.</p>
+          <input type="radio" name="q3" value="a"> Text only <br>
+          <input type="radio" name="q3" value="b"> Text & attachments <br>
+          <input type="radio" name="q3" value="c"> Images only <br>
+          <p>4. The inbox stores ______.</p>
+          <input type="radio" name="q4" value="a"> Received emails <br>
+          <input type="radio" name="q4" value="b"> Sent emails <br>
+          <input type="radio" name="q4" value="c"> Spam emails <br>
+          <p>5. Gmail is an example of ______.</p>
+          <input type="radio" name="q5" value="a"> Email service <br>
+          <input type="radio" name="q5" value="b"> Web browser <br>
+          <input type="radio" name="q5" value="c"> Game <br>
+          <button type="button" onclick="checkQuiz('quiz4', ['a','a','b','a','a'])">Submit Quiz</button>
+        </form>
+        <p id="result4"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 5 -->
+    <div class="chapter" id="ch5">
+      <h2>Lesson 5: Internet Safety</h2>
+      <p>Internet safety means protecting yourself online by using secure passwords, avoiding scams, and being careful with personal data.</p>
+      <iframe src="https://www.youtube.com/embed/aO858HyFbKI?si=Vi0RGQ-9Idt8qLS3"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz5">
+          <p>1. Strong passwords include ______.</p>
+          <input type="radio" name="q1" value="a"> Name only <br>
+          <input type="radio" name="q1" value="b"> Mix of letters, numbers & symbols <br>
+          <input type="radio" name="q1" value="c"> Simple words <br>
+          <p>2. Never share ______ online.</p>
+          <input type="radio" name="q2" value="a"> Personal details <br>
+          <input type="radio" name="q2" value="b"> Photos <br>
+          <input type="radio" name="q2" value="c"> Homework <br>
+          <p>3. Phishing emails try to ______.</p>
+          <input type="radio" name="q3" value="a"> Teach you <br>
+          <input type="radio" name="q3" value="b"> Steal info <br>
+          <input type="radio" name="q3" value="c"> Share fun <br>
+          <p>4. Use ______ networks to stay safe.</p>
+          <input type="radio" name="q4" value="a"> Public <br>
+          <input type="radio" name="q4" value="b"> Secure <br>
+          <input type="radio" name="q4" value="c"> Open <br>
+          <p>5. Antivirus software helps ______.</p>
+          <input type="radio" name="q5" value="a"> Protect from viruses <br>
+          <input type="radio" name="q5" value="b"> Watch movies <br>
+          <input type="radio" name="q5" value="c"> Play games <br>
+          <button type="button" onclick="checkQuiz('quiz5', ['b','a','b','b','a'])">Submit Quiz</button>
+        </form>
+        <p id="result5"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 6 -->
+    <div class="chapter" id="ch6">
+      <h2>Lesson 6: Basics of Internet & Web Browsing</h2>
+      <p>The internet connects computers worldwide. Browsers like Chrome or Firefox allow us to access websites.</p>
+      <iframe src="https://www.youtube.com/embed/UXsomnDkntI?si=WYpB-2ZL852lHM2U"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz6">
+          <p>1. Internet connects ______.</p>
+          <input type="radio" name="q1" value="a"> Only homes <br>
+          <input type="radio" name="q1" value="b"> Computers worldwide <br>
+          <input type="radio" name="q1" value="c"> TVs <br>
+          <p>2. Chrome is a ______.</p>
+          <input type="radio" name="q2" value="a"> Game <br>
+          <input type="radio" name="q2" value="b"> Browser <br>
+          <input type="radio" name="q2" value="c"> Social media <br>
+          <p>3. Websites are accessed using ______.</p>
+          <input type="radio" name="q3" value="a"> Address (URL) <br>
+          <input type="radio" name="q3" value="b"> Password <br>
+          <input type="radio" name="q3" value="c"> Remote <br>
+          <p>4. The ‘http’ in websites means ______.</p>
+          <input type="radio" name="q4" value="a"> HyperText Transfer Protocol <br>
+          <input type="radio" name="q4" value="b"> Home Transfer Tool <br>
+          <input type="radio" name="q4" value="c"> High Tech Program <br>
+          <p>5. A search engine helps you ______.</p>
+          <input type="radio" name="q5" value="a"> Find information <br>
+          <input type="radio" name="q5" value="b"> Watch TV <br>
+          <input type="radio" name="q5" value="c"> Play games <br>
+          <button type="button" onclick="checkQuiz('quiz6', ['b','b','a','a','a'])">Submit Quiz</button>
+        </form>
+        <p id="result6"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 7 -->
+    <div class="chapter" id="ch7">
+      <h2>Lesson 7: Introduction to MS Word</h2>
+      <p>MS Word is software for creating documents like letters, reports, and essays.</p>
+      <iframe src="https://youtu.be/KCfwX98EWIc?si=pF1kq_kKX9cW6EBt"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz7">
+          <p>1. MS Word is used to create ______.</p>
+          <input type="radio" name="q1" value="a"> Games <br>
+          <input type="radio" name="q1" value="b"> Documents <br>
+          <input type="radio" name="q1" value="c"> Songs <br>
+          <p>2. You can change ______ in Word.</p>
+          <input type="radio" name="q2" value="a"> Font <br>
+          <input type="radio" name="q2" value="b"> Keyboard <br>
+          <input type="radio" name="q2" value="c"> CPU <br>
+          <p>3. Shortcut to save is ______.</p>
+          <input type="radio" name="q3" value="a"> Ctrl + C <br>
+          <input type="radio" name="q3" value="b"> Ctrl + S <br>
+          <input type="radio" name="q3" value="c"> Ctrl + V <br>
+          <p>4. Word is part of ______ package.</p>
+          <input type="radio" name="q4" value="a"> MS Office <br>
+          <input type="radio" name="q4" value="b"> Photoshop <br>
+          <input type="radio" name="q4" value="c"> Windows <br>
+          <p>5. Word files are saved as ______.</p>
+          <input type="radio" name="q5" value="a"> .docx <br>
+          <input type="radio" name="q5" value="b"> .jpg <br>
+          <input type="radio" name="q5" value="c"> .mp3 <br>
+          <button type="button" onclick="checkQuiz('quiz7', ['b','a','b','a','a'])">Submit Quiz</button>
+        </form>
+        <p id="result7"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 8 -->
+    <div class="chapter" id="ch8">
+      <h2>Lesson 8: Introduction to MS Excel</h2>
+      <p>MS Excel is a spreadsheet software used for calculations, charts, and data management.</p>
+      <iframe src="https://youtu.be/wbJcJCkBcMg?si=t7M5YQ5MHNEeNLmN"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz8">
+          <p>1. Excel is mainly used for ______.</p>
+          <input type="radio" name="q1" value="a"> Drawing <br>
+          <input type="radio" name="q1" value="b"> Data & calculations <br>
+          <input type="radio" name="q1" value="c"> Playing <br>
+          <p>2. Rows in Excel are labeled with ______.</p>
+          <input type="radio" name="q2" value="a"> Numbers <br>
+          <input type="radio" name="q2" value="b"> Letters <br>
+          <input type="radio" name="q2" value="c"> Symbols <br>
+          <p>3. Columns in Excel are labeled with ______.</p>
+          <input type="radio" name="q3" value="a"> Numbers <br>
+          <input type="radio" name="q3" value="b"> Letters <br>
+          <input type="radio" name="q3" value="c"> Colors <br>
+          <p>4. Formula in Excel always starts with ______.</p>
+          <input type="radio" name="q4" value="a"> # <br>
+          <input type="radio" name="q4" value="b"> = <br>
+          <input type="radio" name="q4" value="c"> + <br>
+          <p>5. Excel files are saved as ______.</p>
+          <input type="radio" name="q5" value="a"> .xls/.xlsx <br>
+          <input type="radio" name="q5" value="b"> .docx <br>
+          <input type="radio" name="q5" value="c"> .jpg <br>
+          <button type="button" onclick="checkQuiz('quiz8', ['b','a','b','b','a'])">Submit Quiz</button>
+        </form>
+        <p id="result8"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 9 -->
+    <div class="chapter" id="ch9">
+      <h2>Lesson 9: Introduction to MS PowerPoint</h2>
+      <p>MS PowerPoint is used to create slideshows and presentations for schools, businesses, and personal use.</p>
+      <iframe src="https://www.youtube.com/embed/MjtjCGKtjRM?si=tCMyYQ8FcZriwbzL"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz9">
+          <p>1. PowerPoint is used to make ______.</p>
+          <input type="radio" name="q1" value="a"> Slideshows <br>
+          <input type="radio" name="q1" value="b"> Emails <br>
+          <input type="radio" name="q1" value="c"> Books <br>
+          <p>2. New slides are added using ______.</p>
+          <input type="radio" name="q2" value="a"> Insert → New Slide <br>
+          <input type="radio" name="q2" value="b"> File → Save <br>
+          <input type="radio" name="q2" value="c"> Edit → Undo <br>
+          <p>3. PowerPoint is part of ______ package.</p>
+          <input type="radio" name="q3" value="a"> MS Office <br>
+          <input type="radio" name="q3" value="b"> Photoshop <br>
+          <input type="radio" name="q3" value="c"> Excel <br>
+          <p>4. Slide shows are used for ______.</p>
+          <input type="radio" name="q4" value="a"> Presentations <br>
+          <input type="radio" name="q4" value="b"> Games <br>
+          <input type="radio" name="q4" value="c"> Emails <br>
+          <p>5. PowerPoint files are saved as ______.</p>
+          <input type="radio" name="q5" value="a"> .pptx <br>
+          <input type="radio" name="q5" value="b"> .docx <br>
+          <input type="radio" name="q5" value="c"> .xlsx <br>
+          <button type="button" onclick="checkQuiz('quiz9', ['a','a','a','a','a'])">Submit Quiz</button>
+        </form>
+        <p id="result9"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 10 -->
+    <div class="chapter" id="ch10">
+      <h2>Lesson 10: Introduction to Cybersecurity</h2>
+      <p>Cybersecurity is about protecting computers and data from threats like viruses, hackers, and scams.</p>
+      <iframe src="https://www.youtube.com/embed/Ok-AYnh6Vnk?si=2WQez3OLjE6e-0lC"></iframe>
+      <div class="quiz">
+        <h3>Quiz</h3>
+        <form id="quiz10">
+          <p>1. Cybersecurity protects ______.</p>
+          <input type="radio" name="q1" value="a"> Food <br>
+          <input type="radio" name="q1" value="b"> Computers & data <br>
+          <input type="radio" name="q1" value="c"> Roads <br>
+          <p>2. Hackers try to ______.</p>
+          <input type="radio" name="q2" value="a"> Play games <br>
+          <input type="radio" name="q2" value="b"> Steal info <br>
+          <input type="radio" name="q2" value="c"> Watch movies <br>
+          <p>3. Antivirus protects from ______.</p>
+          <input type="radio" name="q3" value="a"> Viruses <br>
+          <input type="radio" name="q3" value="b"> Traffic <br>
+          <input type="radio" name="q3" value="c"> Heat <br>
+          <p>4. Two-factor authentication adds ______.</p>
+          <input type="radio" name="q4" value="a"> Extra security <br>
+          <input type="radio" name="q4" value="b"> Games <br>
+          <input type="radio" name="q4" value="c"> Music <br>
+          <p>5. A firewall is used for ______.</p>
+          <input type="radio" name="q5" value="a"> Cooking <br>
+          <input type="radio" name="q5" value="b"> Network protection <br>
+          <input type="radio" name="q5" value="c"> Photos <br>
+          <button type="button" onclick="checkQuiz('quiz10', ['b','b','a','a','b'])">Submit Quiz</button>
+        </form>
+    <!-- Certificate Section -->
+    <div class="chapter" id="certificate">
+      <h2>🎓 Completion Certificate</h2>
+      <p>Congratulations! Enter your name to generate your certificate:</p>
+      <input type="text" id="certName" placeholder="Enter your name" style="padding
